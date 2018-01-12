@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+        <td>NAME</td>
+        <td>GENDER</td>
+        <td>PHONE</td>
+        <td>EMAIL</td>
+        <td>ADDRESS</td>
+    </thead>
+    <tbody ng-repeat="employee in employees">
+        <tr>
+            <td>{{employee.name}}</td>
+            <td>{{employee.gender}}</td>
+            <td>{{employee.phone}}</td>
+            <td>{{employee.email}}</td>
+            <td>{{employee.address}}</td>
+            <td>
+                <button class="btn btn-primary">EDIT</button>
+            </td>
+            <td>
+                <button class="btn btn-danger" ng-click="delet(employee.id)">DELETE</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

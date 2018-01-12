@@ -1,0 +1,25 @@
+<h1>Edit Employee</h1>
+<div class="row" ng-controller="editEmpController">
+  <div class="col-xs-3"></div>
+  <div class="col-xs-6">
+    <label>EMPLOYEE ID : {{emp[0].id}}</label>
+    <br/>
+    <label>Name : {{emp[0].name}}
+      <!-- <input class='form-control' type="text" ng-model="name" /> -->
+    </label>
+    <br/>
+    <label>Email :
+      <input class='form-control' type="text" ng-model="emp[0].email" />
+    </label>
+    <br/>
+    <label>Phone:
+      <input class='form-control' type="text" ng-model="emp[0].phone" />
+    </label>
+    <br/>
+    <label>Address:
+      <input class='form-control' type="text" ng-model="emp[0].address" />
+    </label>
+    <br/>
+    <button class="btn btn-primary" ng-click="updateEmployee()">UPDATE EMPLOYEE!</button>
+  </div>
+</div>
